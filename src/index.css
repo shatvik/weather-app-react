@@ -1,0 +1,176 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800;600&display=swap"); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+::selection {
+  color: #4c52ad;
+  background-color: #fff;
+}
+::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3c429e;
+}
+.container {
+  width: 400px;
+  height: 80vh;
+  background-color: #4c52ad;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.upper-data {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.upper-data img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.lower-data {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.weather-data {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.searching {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.btn {
+  padding: 0 2em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: url(img/send.png);
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+  filter: invert(65%);
+  margin-top: 5px;
+}
+.search {
+  margin-bottom: 1em;
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  padding: 0.8em;
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+  text-transform: capitalize;
+}
+.location {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
+.temperature {
+  color: #fff;
+  text-align: center;
+  font-size: 4em;
+  font-weight: 900;
+}
+
+.more-info-label {
+  font-size: 1em;
+  color: #fff;
+}
+
+.more-info-container {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 1em;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.info-block {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.info-block-label {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-block-label img {
+  width: 1.5em;
+}
+
+.info-block-label span {
+  color: #fff;
+  margin-top: 0.6em;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.info-block-value {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.6em;
+  font-weight: 400;
+  color: #fff;
+}
+/* You can add global styles to this file, and also import other style files */
+/* :root{
+    --blue-1 : #3C429E;
+    --blue-2 : #4C52AD;
+    --yellow : #FAC742;
+    --white : #fff;
+    --grey : #ededed;
+    --shadow-dark : rgba(0,0,0,0.3);
+    --shadow-light : rgba(255,255,255,0.1);
+}
+
+
+
+{"cloud_pct": 0, "temp": 30, "feels_like": 37, "humidity": 79, "min_temp": 30, "max_temp": 30, "wind_speed": 3.09, "wind_degrees": 310, "sunrise": 1684715540, "sunset": 1684762706}
+*/
